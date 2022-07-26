@@ -1,21 +1,49 @@
 @import 'app.scss';
 
 .products {
+
+  hr {
+    height: 2px;
+    width: 100%;
+    background-color: #0000dd;
+    margin: 10px 0;
+  }
+
   margin-top: 40px;
   img {
-    width: 45%;
-    height: 35%;
+    width: 40%;
+    height: 30%;
   }
+}
+
+.product-desc {
+  @include text;
+  // visibility: hidden;
+  display: none;
 }
 
 .product-element {
   display: flex;
 }
-
 .product-name {
   @include h2();
+  color: $Black;
+
+  &:hover {
+    color: $Blue;
+  }
+
 }
 
-.product-desc {
-  @include text
+.product-list {
+  >li {
+    &:hover{
+      .product-desc{
+        // visibility: visible;
+        // transition: .5s;
+        display: block;
+      }
+    }
+  }
 }
+
