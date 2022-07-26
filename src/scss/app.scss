@@ -89,6 +89,8 @@ h6 {
 
 /*--------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 $Blue: #1764C2;
 $Green: #29B384;
 $Black: #082242;
@@ -159,11 +161,30 @@ $Linear: linear-gradient(232.83deg, #165EBF -13.52%, #29B384 76.05%);
 }
 
 body {
-  font-family: 'SF UI Text Regular';
+  font-family: 'Roboto', sans-serif;
   width: 1440px;
 }
 
 .container {
   width: 100%;
   padding: 0px 9.375%;
+}
+
+@mixin button {
+  // margin-top: 15px;
+  padding: 13px 40px;
+  border: 2px solid $Blue;
+  color: $Blue;
+  background-color: $White;
+
+  &:hover {
+    color: $White;
+    background-color: $Blue;
+    transition: .5s;
+    border: 2px solid $White;
+  }
+}
+
+body {
+  background-color: rgb(240, 248, 255)
 }

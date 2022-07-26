@@ -1,0 +1,21 @@
+@import 'app.scss';
+
+.products {
+  margin-top: 40px;
+  img {
+    width: 45%;
+    height: 35%;
+  }
+}
+
+.product-element {
+  display: flex;
+}
+
+.product-name {
+  @include h2();
+}
+
+.product-desc {
+  @include text
+}
