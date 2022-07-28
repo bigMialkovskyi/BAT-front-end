@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <html>
-
+  
 <head>
   <meta charset="utf-8">
-  <script src="index.js"></script>
   <title>BAT</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="img/logo.png" type="image/png">
+  <script type="module" src="../src/index.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -25,11 +27,11 @@
       <ul class="header-menu">
         <li class="down">
           <a href="#">Наша продукція</a>
-            <ul class="submenu">
-              <li><img src="img/battery-status.svg" alt="icon"><a href="">Блоки живлення</a></li>
-              <li><img src="img/option-2.svg" alt="icon"><a href="">Блоки управління</a></li>
-              <li><img src="img/weight-scale.svg" alt="icon"><a href="">Вимірювальні прилади</a></li>
-            </ul>
+          <ul class="submenu">
+            <li><img src="img/battery-status.svg" alt="icon"><a href="">Блоки живлення</a></li>
+            <li><img src="img/option-2.svg" alt="icon"><a href="">Блоки управління</a></li>
+            <li><img src="img/weight-scale.svg" alt="icon"><a href="">Вимірювальні прилади</a></li>
+          </ul>
         </li>
         <li><a href="#">Про нас</a></li>
         <li><a href="#">Блог</a></li>
@@ -68,45 +70,220 @@
 
   <section class="our-products">
     <div class="container">
-      <div class="products">
+      <!-- <div class="products">
 
         <ul class="product-list">
-        <li class="product-element">
-          <img src="img/product_01.png" alt="product">
-          <div class="about">
-            <a href="#" class="product-name">Найменування товару</a>
-            <p class="product-desc">What does "PCB" mean? A printed circuit board (PCB) is an electronic assembly that uses copper conductors to create electrical connections between components. Printed circuit boards provide mechanical support for electronic components so that a device can be mounted in an enclosure. A printed circuit board design must include a specific set of steps that aligns with the manufacturing process, integrated circuit packaging, and the structure of the bare circuit board.</p>
-          </div>
-        </li>
-        <hr>
+          <li class="product-element">
+            <img src="img/product_01.png" alt="product">
+            <div class="about">
+              <a href="#" class="product-name">Найменування товару</a>
+              <p class="product-desc">What does "PCB" mean? A printed circuit board (PCB) is an electronic assembly that
+                uses copper conductors to create electrical connections between components. Printed circuit boards
+                provide mechanical support for electronic components so that a device can be mounted in an enclosure. A
+                printed circuit board design must include a specific set of steps that aligns with the manufacturing
+                process, integrated circuit packaging, and the structure of the bare circuit board.</p>
+            </div>
+          </li>
+          <hr>
 
 
-        <li class="product-element">
-          <img src="img/product_02.png" alt="product">
-          <div class="about">
-            <a href="#" class="product-name">Найменування товару</a>
-            <p class="product-desc">What does "PCB" mean? A printed circuit board (PCB) is an electronic assembly that uses copper conductors to create electrical connections between components. Printed circuit boards provide mechanical support for electronic components so that a device can be mounted in an enclosure. A printed circuit board design must include a specific set of steps that aligns with the manufacturing process, integrated circuit packaging, and the structure of the bare circuit board.</p>
-          </div>
-        </li>
-        <hr>
+          <li class="product-element">
+            <img src="img/product_02.png" alt="product">
+            <div class="about">
+              <a href="#" class="product-name">Найменування товару</a>
+              <p class="product-desc">What does "PCB" mean? A printed circuit board (PCB) is an electronic assembly that
+                uses copper conductors to create electrical connections between components. Printed circuit boards
+                provide mechanical support for electronic components so that a device can be mounted in an enclosure. A
+                printed circuit board design must include a specific set of steps that aligns with the manufacturing
+                process, integrated circuit packaging, and the structure of the bare circuit board.</p>
+            </div>
+          </li>
+          <hr>
 
 
-        <li class="product-element">
-          <img src="img/product_03.png" alt="product">
-          <div class="about">
-            <a href="#" class="product-name">Найменування товару</a>
-            <p class="product-desc">What does "PCB" mean? A printed circuit board (PCB) is an electronic assembly that uses copper conductors to create electrical connections between components. Printed circuit boards provide mechanical support for electronic components so that a device can be mounted in an enclosure. A printed circuit board design must include a specific set of steps that aligns with the manufacturing process, integrated circuit packaging, and the structure of the bare circuit board.</p>
-          </div>
-        </li>
+          <li class="product-element">
+            <img src="img/product_03.png" alt="product">
+            <div class="about">
+              <a href="#" class="product-name">Найменування товару</a>
+              <p class="product-desc">What does "PCB" mean? A printed circuit board (PCB) is an electronic assembly that
+                uses copper conductors to create electrical connections between components. Printed circuit boards
+                provide mechanical support for electronic components so that a device can be mounted in an enclosure. A
+                printed circuit board design must include a specific set of steps that aligns with the manufacturing
+                process, integrated circuit packaging, and the structure of the bare circuit board.</p>
+            </div>
+          </li>
         </ul>
-      </div>
+      </div> -->
+
+      <!-- <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <img src="img/product_01.png" alt="product">
+
+            </div>
+            <div class="slider__item">
+              <img src="img/product_02.png" alt="product">
+
+            </div>
+            <div class="slider__item">
+              <img src="img/product_03.png" alt="product">
+
+            </div>
+            <div class="slider__item">
+              <img src="img/product_03.png" alt="product">
+
+            </div>
+            <div class="slider__item">
+              <img src="img/product_03.png" alt="product">
+
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="slider__control" data-slide="prev"></a>
+        <a href="#" class="slider__control" data-slide="next"></a>
+      </div> -->
     </div>
   </section>
+
+  <div class="swiper-container main-slider loading">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Shaun Matthews</p>
+          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Alexis Berry</p>
+          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Billie Pierce</p>
+          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1538329972958-465d6d2144ed?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTkzNg&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1538329972958-465d6d2144ed?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTkzNg&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Trevor Copeland</p>
+          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTk1OQ&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTk1OQ&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Bernadette Newman</p>
+          <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+        </div>
+      </div>
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
+  </div>
+
+  <!-- Thumbnail navigation -->
+  <div class="swiper-container nav-slider loading">
+    <div class="swiper-wrapper" role="navigation">
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Shaun Matthews</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Alexis Berry</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Billie Pierce</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1538329972958-465d6d2144ed?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTkzNg&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1538329972958-465d6d2144ed?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTkzNg&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Trevor Copeland</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <figure class="slide-bgimg"
+          style="background-image:url(https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTk1OQ&ixlib=rb-1.2.1&q=85)">
+          <img
+            src="https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTk1OQ&ixlib=rb-1.2.1&q=85"
+            class="entity-img" />
+        </figure>
+        <div class="content">
+          <p class="title">Bernadette Newman</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer id="footer" class="footer">
     <div class="container">
     </div>
   </footer>
 
-  <script src="../src/index.js"></script>
 </body>
