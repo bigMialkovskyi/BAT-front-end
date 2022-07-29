@@ -9,10 +9,6 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
 
-let name= prompt('Як Вас звати?','');
-alert('Привіт '+name+' !');
-console.log(10)
-
 // const swiper = new Swiper(...);
 
 // // core version + navigation, pagination modules:
