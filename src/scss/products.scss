@@ -1,5 +1,7 @@
 @import 'app.scss';
 
+/*about-us*/
+
 .about-us-title {
 margin-top: 80px;
 margin-bottom: 20px;
@@ -8,6 +10,20 @@ margin-bottom: 20px;
 .about-us-desc {
   display: flex;
 }
+
+
+.about-us-title {
+  @include h1();
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $Blue;
+}
+
+.about-us-text {
+  @include text;
+}
+
+/*offers*/
 
 .we-offer {
   display: flex;
@@ -39,63 +55,53 @@ margin-bottom: 20px;
   background-color: #00BFFF;
 }
 
+/*product-list*/
+
+.product-img-container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: radial-gradient( white 10px, #191970 200px);
+  background: radial-gradient( rgb(0, 0, 205) 10px, #191970 220px);
+}
+
 .products {
-  hr {
-    height: 2px;
-    width: 100%;
-    background-color: #0000dd;
-    margin: 10px 0;
-  }
 
   margin-top: 40px;
+  background-color: #191970;
 
   img {
-    width: 40%;
-    height: 30%;
+    max-width: 350px;
+    max-height: 250px;
+    // background: radial-gradient( white 10px, #191970);
+    // box-shadow: 0 0 0 10px rgba(255, 240, 245, 0.1);
   }
 }
 
+.about-product {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 35%;
+}
+
 .product-desc {
-  @include text;
-  // visibility: hidden;
-  display: none;
+  @include text-2;
+  color: $White;
+  border-bottom:#0000CD  2px dashed;
+  margin: 20px 0;
 }
 
 .product-element {
   display: flex;
+  justify-content: space-around;
 }
 
 .product-name {
-  @include h2();
-  color: $Black;
-
-  &:hover {
-    color: $Blue;
-  }
-
-}
-
-.product-list {
-  >li {
-    &:hover {
-      .product-desc {
-        // visibility: visible;
-        // transition: .5s;
-        display: block;
-      }
-    }
-  }
-}
-
-.about-us-title {
-  @include h1();
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: $Blue;
-}
-
-.about-us-text {
-  @include text;
+  @include h3();
+  color: $White;
+  border-bottom: #FFF  2px dashed;
 }
 
 /*slider*/
