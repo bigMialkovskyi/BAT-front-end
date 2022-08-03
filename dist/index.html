@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BAT</title>
+  <title>SnT Electronics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -12,7 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="img/logo.png" type="image/png">
-  <script type="module" src="../src/index.js"></script>
+  <script type="text/html" src="../src/index.js"></script>
+  <!-- <script type="module" src="../src/index.js"></script> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
@@ -22,7 +23,7 @@
     <div class="container">
       <div class="logo">
         <img src="img/logo.png" alt="logo">
-        <p class="logo-text">BAT<span>eam</span></p>
+        <p class="logo-text">SnT<span> Electronics</span></p>
       </div>
       <ul class="header-menu">
         <li class="down">
@@ -33,8 +34,8 @@
             <li><img src="img/weight-scale.svg" alt="icon"><a href="">Вимірювальні прилади</a></li>
           </ul>
         </li>
-        <li><a href="#">Про нас</a></li>
-        <li><a href="#">Блог</a></li>
+        <li><a href="general-information" onclick="scrollNav()">Про нас</a></li>
+        <!-- <li><a href="#">Блог</a></li> -->
         <li><a href="#">Контакти </a></li>
       </ul>
       <!-- <div class="locale">
@@ -55,6 +56,9 @@
           </ul>
         </li>
       </ul>
+
+      <button type="button" onclick="myFnc()"> click me</button>
+
     </div>
   </header>
 
@@ -68,7 +72,7 @@
     </div>
   </section>
 
-  <section class="general-information">
+  <section class="general-information" id="general-information">
     <div class="container">
       <div class="about-us">
         <h1 class="about-us-title">про нас</h1>
@@ -110,44 +114,101 @@
   </section>
 
   <section class="our-products">
-      <div class="products">
-        <ul class="product-list">
-          <li class="product-element">
-            <div class="product-img-container"><img src="img/product_01.png" alt="product"></div>
-            <div class="about-product">
-              <a href="#" class="product-name">Найменування товару</a>
-              <p class="product-desc">What does "PCB" mean? A printed circuit board (PCB) is an electronic assembly that
-                uses copper conductors to create electrical connections between components. Printed circuit boards
-                provide mechanical support for electronic components so that a device can be mounted in an enclosure. A
-                printed circuit board design must include a specific set of steps that aligns with the manufacturing
-                process, integrated circuit packaging, and the structure of the bare circuit board.</p>
-            </div>
-          </li>
+    <div class="products">
 
-          <li class="product-element">
-            <div class="about-product">
-              <a href="#" class="product-name">Найменування товару</a>
-              <p class="product-desc">What does "PCB" mean? A printed circuit board (PCB) is an electronic assembly that
-                uses copper conductors to create electrical connections between components. Printed circuit boards
-                provide mechanical support for electronic components so that a device can be mounted in an enclosure. A
-                printed circuit board design must include a specific set of steps that aligns with the manufacturing
-                process, integrated circuit packaging, and the structure of the bare circuit board.</p>
-            </div>
-            <div class="product-img-container"><img src="img/product_02.png" alt="product"></div>
-          </li>
+      <h1 class="products-title">Замовлення наших клієнтів</h1>
 
-          <li class="product-element">
-            <div class="product-img-container"><img src="img/product_03.png" alt="product"></div>
-            <div class="about-product">
-              <a href="#" class="product-name">Найменування товару</a>
-              <p class="product-desc">What does "PCB" mean? A printed circuit board (PCB) is an electronic assembly that
-                uses copper conductors to create electrical connections between components. Printed circuit boards
-                provide mechanical support for electronic components so that a device can be mounted in an enclosure. A
-                printed circuit board design must include a specific set of steps that aligns with the manufacturing
-                process, integrated circuit packaging, and the structure of the bare circuit board.</p>
-            </div>
-          </li>
-        </ul>
+      <ul class="product-list">
+        <li class="product-element">
+          <div class="product-img-container"><img src="img/product_01.png" alt="product"></div>
+          <div class="about-product">
+            <a href="#" class="product-name">Підсилювач струму(бустер)</a>
+            <ul class="product-features">
+              <li>Бустер має три свитлодіода:</li>
+              <li>Зелений-индикатор живлення 12В.</li>
+              <li>Синій-индикатор вхідного сигналу..</li>
+              <li>Червоний-индикатор спрацювання захисту.</li>
+            </ul>
+            <ul class="product-features">
+              <li>Герметично залитий корпус з кріпленням дозволяє встановлювати цей регулятор на відкритому повітрі.
+              </li>
+              <li>Кабелі для підключення 6 кв. мм.</li>
+              <li>Запобіжник на 50А. </li>
+              <li>Робоча напруга 12 Вольт.</li>
+              <li>Робочій струм 40 Ампер.</li>
+              <li>Струм спрацювання захисту 50 Ампер.</li>
+            </ul>
+            <p class="product-desc">Призначений для підсилення вихідного струму блоків керування в яких вихід керування
+              двигуном не може забезпечити достатнього струму.
+              Наприклад, якщо вихід блока керування забезпечує струм 10-15А, а двигун(насос) споживає 30А і більше.
+              Тестувався з блоком керування Raven RCM.
+              <br>
+              <br>
+              Пристрій має систему захисту двигуна по струму. В разі наприклад підклинювання двигуна,його робочій струм
+              зростає і система захисту спрацьовує.
+              Якщо спрацювала система захисту,загораеться червоний світлодиод і живлення на двигун припиняється.
+              Вхід сигналу керування регулятором розв'язан від блока керування, тим самим забезпечується захист блока у
+              разі виходу регулятора з ладу.
+              Зняти захист можна тільки відключивши та знов включивши пристрій при умові, що перевантаження на виході
+              також усунуто.
+            </p>
+          </div>
+        </li>
+
+        <li class="product-element">
+          <div class="about-product">
+            <a href="#" class="product-name">Плата RGB LED світильника</a>
+            <p class="product-desc">Цей девайс має 14 фіксованих кольорів та режим плавної зміни кольору.
+              Розмір платі 30мм, що дозволяє встановити її будь-де(за монітор,телевізор,у нічник,стелю тощо.)
+              Красиві кольори і відтінки, нададуть ще більш барвистий вигляд у вашій спальні, кухні або дитячій.
+              <br>
+              <br>
+              Живлення відбувається через роз'єм Micro usb від будь-якого джерела напругою 5V.
+              Підійде зарядний пристій від мобільного телефона.
+            </p>
+          </div>
+          <div class="product-img-container"><img src="img/product_02.png" alt="product"></div>
+        </li>
+
+        <li class="product-element">
+          <div class="product-img-container"><img src="img/product_03.png" alt="product"></div>
+          <div class="about-product">
+            <a href="#" class="product-name">Регулятор обертів двигуна постійного струму</a>
+            <ul class="product-features">
+              <li>Надійний металевий корпус з кріпленням.</li>
+              <li>Кабелі для підключення 6 кв. мм.</li>
+              <li>Запобіжник на 40А. </li>
+              <li>Робоча напруга 12 Вольт</li>
+              <li>Робочій струм 40 Ампер.</li>
+              <li>Максимальний струм 45 Ампер.</li>
+            </ul>
+            <p class="product-desc">Призначений для керування обертами двигунів різного роду призначення.
+              Зокрема підходить для водяних мембранних насосів високого тиску та насосів для перекачування рідинних
+              добрив(карбамідно-аміачна сумішей (КАС),аммиака).
+              Завдяки цьому регулятору, Ви зможете контролювати швидкість перекачування рідини обо сипких речовин.
+              Даний регулятор має вихід на кінцевик для дистанційного вимикання двигуна.</p>
+          </div>
+        </li>
+
+        <li class="product-element">
+          <div class="about-product">
+            <a href="#" class="product-name">Мінівольтметр автоелектрика</a>
+            <p class="product-desc">Призначений для діагностування несправностей та ремонту авто/мото/сільгосп техніки.
+              Режим вимірювання дозволяє міряти напругу до 30 Вольт постійного струму.
+              Режим прозвонки призначений для пошуку обриву проводки.
+              Режими 300R та 1K призначені для пошуку контактів центрального замку. На центральний вивід тестера
+              підключеється резистор опором 300 ом або 1 кілоОм. Стане у нагоді при встановленні сигналізації.
+              Даний прилад стане надійним помічником при діагностуванні та ремонті проводки.
+              Завдяки маленьким розмірам, не займає багато місця на робочому столі. При бажанні,можно носити його навіть
+              у кишені.
+              Тестер працює від акумулятора та підзаряджається від будь-якого блоку живлення з напругою 5 Вольт через
+              роз'єм microusb. </p>
+          </div>
+          <div class="product-img-container"><img src="img/product_04.png" alt="product">
+            <img src="img/product_04_01.png" alt="product">
+          </div>
+        </li>
+      </ul>
       <div class="hexagon-01"></div>
       <div class="hexagon-02"></div>
       <div class="hexagon-03"></div>
@@ -156,11 +217,62 @@
       <div class="hexagon-06"></div>
       <div class="hexagon-07"></div>
       <div class="hexagon-08"></div>
+      <div class="hexagon-09"></div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <h1 class="contacts-title">Звяжіться з нами</h1>
+      <div class="contacts-info">
+        <ul class="contacts-list">
+          <p>Телефонуйте:</p>
+          <li>
+            <div class="icon-container">
+              <img src="img/phone-call.svg" alt="">
+            </div>
+            <a href="tel:(067) 570 34 89">(067) 570 34 89</a>
+          </li>
+          <li>
+            <div class="icon-container">
+              <img src="img/phone-call.svg" alt="">
+            </div>
+            <a href="tel:(067) 570 34 89">(067) 570 34 89</a>
+          </li>
+          <P>Пошта:</P>
+          <li>
+            <div class="icon-container">
+              <img src="img/mail.svg" alt="">
+            </div>
+            <a href="">sntelectronics@gmai.com</a>
+          </li>
+        </ul>
+
+        <ul class="social">
+          <p> Ми в соцмережах:</p>
+          <li>
+            <div class="icon-container">
+              <img src="img/instagram-social.svg" alt="">
+            </div>
+            <p>Instagram</p>
+          </li>
+          <li>
+          <div class="icon-container">
+            <img src="img/social-youtube.svg" alt="">
+          </div>
+          <p>YouTube</p>
+          </li>
+        </ul>
       </div>
+    </div>
   </section>
 
   <footer id="footer" class="footer">
     <div class="container">
+      <div class="copyright">
+        <img src="img/logo.png" alt="logo">
+        <p>© COPYRIGHT 2022</p>
+      </div>
     </div>
   </footer>
 

@@ -1,0 +1,1 @@
+(()=>{"use strict";$(".nav a").click((function(){return $(".active").removeClass("active"),$(this).addClass("active"),$("html, body").stop().animate({scrollTop:$($(this).attr("href")).offset().top-160},300),!1})),console.log(10),$("button").click((function(){console.log(10)}))})();

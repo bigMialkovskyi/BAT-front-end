@@ -4,3 +4,15 @@ footer {
   background-color: $Blue;
   height: 100px;
 }
+
+.copyright {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 10px;
+  }
+}
