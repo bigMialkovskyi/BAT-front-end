@@ -5,9 +5,23 @@
   height: 80px;
   @include flex();
 
+  .logo {
+    background-color: #00BFFF;
+    height: 60px;
+    // margin-top: auto;
+    border-radius: 10px;
+  }
+
+  .logo-img {
+    width: 55px;
+    height: 55px;
+    border-radius:  10px
+  }
+
   .logo-text {
     @include h3();
-    color: #50ABD9;
+    // color: #50ABD9;
+    color: $White;
   }
 
   .shop-interaction {
